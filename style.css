@@ -29,6 +29,7 @@ body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: "Noto Sans Georgian", sans-serif;
 }
 
 /* Ambient Background Light */
@@ -58,11 +59,9 @@ body {
     transform: scale(1.1);
   }
 }
-
-body {
-  font-family: "Noto Sans Georgian", sans-serif;
+h2 {
+  font-weight: 800;
 }
-
 h1,
 h2,
 h3,
@@ -111,7 +110,7 @@ h3,
 
 .hero-full h2 {
   font-size: 3rem;
-  font-weight: 300;
+  /* font-weight: 300; */
   margin-bottom: 30px;
   background: linear-gradient(to right, #fff, #94a3b8);
   -webkit-background-clip: text;
@@ -832,15 +831,22 @@ h2 {
     padding-top: 10px;
   }
 }
-
+@media (max-width: 985px) {
+  .bg-img {
+    max-width: 700px;
+    width: auto;
+  }
+}
+@media (max-width: 772px) {
+  .bg-img {
+    max-width: 500px;
+    width: auto;
+  }
+}
 @media (max-width: 600px) {
   .psycho-card {
     margin: 40px 10px;
   }
-
-  /* .psycho-image {
-    height: 180px;
-  } */
 
   .psycho-content {
     padding: 15px;
@@ -857,5 +863,26 @@ h2 {
   .cards-badge {
     font-size: 0.7rem;
     padding: 6px 14px;
+  }
+}
+@media (max-width: 560px) {
+  .bg-img {
+    max-width: 360px;
+    width: auto;
+  }
+}
+@media (max-width: 418px) {
+  .grid-header h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 326px) {
+  .grid-header h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 312px) {
+  .ourview-header h2 {
+    font-size: 20px;
   }
 }
