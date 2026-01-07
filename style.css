@@ -653,3 +653,43 @@ details[open] summary::after {
   clear: both;
   text-align: center;
 }
+.chelo img,
+.lana img,
+.nora img,
+.sofi img,
+.giorgi img,
+.megi img,
+.mariami img {
+  height: 50px;
+}
+.chelo summary,
+.lana summary,
+.nora summary,
+.sofi summary,
+.giorgi summary,
+.megi summary,
+.mariami summary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Logo image styles */
+.hero-inner-container a img {
+  height: 8rem;
+}
+strong {
+  text-decoration: underline;
+  font-size: large;
+  font-weight: bolder;
+}
+@media (max-width: 612px) {
+  #ourview {
+    display: flex;
+    flex-direction: column;
+  }
+  #social-requirements {
+    display: flex;
+    flex-direction: column;
+  }
+}
