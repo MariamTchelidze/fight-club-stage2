@@ -548,22 +548,33 @@ h3 {
   font-size: 1.3rem;
   white-space: nowrap;
 }
+
+/* სოციალური მოთხოვნილებების სექცია,  */
 #social-requirements {
+  margin-top: 10%;
   width: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap; */
   display: grid;
-  /* grid-template-columns: 2fr 2fr; */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 2fr 2fr;
   grid-gap: 30px;
+  border: #141b26 1px solid;
+  padding: 30px;
+}
+.grid-header {
+  grid-column: 1 / -1;
+  clear: both;
+  text-align: center;
+}
+.grid-header h2 {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.grid-header h2:hover {
+  color: #06b6d4;
+  transition: all 0.3s ease;
 }
 #social-requirements .lasha,
 #social-requirements .giorgi {
   padding: 30px;
-  /* border-color: var(--primary-cyan); */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -612,6 +623,7 @@ summary::after {
 details[open] summary::after {
   content: "-";
 }
+
 /* index.html styles */
 .transferer {
   margin-top: 100px;
@@ -624,4 +636,20 @@ details[open] summary::after {
   background-color: #141b26;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Last Section styles */
+#ourview {
+  margin-top: 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 30px;
+  border: #141b26 1px solid;
+  padding: 30px;
+}
+.ourview-header {
+  grid-column: 1 / -1;
+  clear: both;
+  text-align: center;
 }
