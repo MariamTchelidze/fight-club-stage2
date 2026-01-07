@@ -586,7 +586,6 @@ details {
   padding: 15px;
 }
 details[open] {
-  border-color: var(--blood-red);
   box-shadow: 0 0 15px rgba(138, 11, 11, 0.2);
 }
 
@@ -612,4 +611,17 @@ summary::after {
 }
 details[open] summary::after {
   content: "-";
+}
+/* index.html styles */
+.transferer {
+  margin-top: 100px;
+  width: 100%;
+}
+.transferer a {
+  padding: 25px;
+  text-decoration: none;
+  color: #06b6d4;
+  background-color: #141b26;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
